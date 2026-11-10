@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="MurciaGram">
+  <rect width="64" height="64" rx="16" fill="#b23a2f"/>
+  <g transform="translate(16 16)" fill="#f7f0e7">
+    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+  </g>
+</svg>

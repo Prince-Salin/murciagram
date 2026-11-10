@@ -1,0 +1,17 @@
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Configuración personal del editor
+.vscode/*
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Archivos de respaldo del editor
+*~
+*.bak

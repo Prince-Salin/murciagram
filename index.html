@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>MurciaGram · El Pinterest de la Región de Murcia</title>
+  <meta name="description" content="MurciaGram es una galería visual de los 45 municipios de la Región de Murcia: del casco barroco de Murcia al Mar Menor, el Valle de Ricote y el Noroeste, con fotografías, patrimonio y enlaces oficiales.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pablo Manuel">
+  <meta name="theme-color" content="#b23a2f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MurciaGram">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="MurciaGram · El Pinterest de la Región de Murcia">
+  <meta property="og:description" content="Los 45 municipios de la Región de Murcia en una galería visual: patrimonio, costa, sierra y gastronomía.">
+  <meta property="og:image" content="assets/img/murcia-desktop.jpg">
+  <meta property="og:image:alt" content="Fachada barroca de la Catedral de Murcia">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="667">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#galeria">Saltar a la galería</a>
+
+  <header class="header" id="inicio">
+    <p class="header__brand">
+      <img class="header__mark" src="assets/icons/favicon.svg" alt="" width="40" height="40">
+      <span class="header__name">MurciaGram</span>
+    </p>
+
+    <h1 class="header__title">La Región de Murcia, <em>tarjeta a tarjeta</em></h1>
+    <p class="header__claim">Cuarenta y cinco municipios, un solo mapa y una sola regla: guardar lo que te inspira.</p>
+    <p class="header__tag">Patrimonio · Costa · Sierra · Gastronomía</p>
+  </header>
+
+  <nav class="nav" aria-label="Navegación principal">
+    <ul class="nav__list">
+      <li><a class="nav__link" href="#inicio">Inicio</a></li>
+      <li><a class="nav__link" href="#galeria">Galería</a></li>
+      <li><a class="nav__link" href="#creditos">Créditos</a></li>
+    </ul>
+  </nav>
+
+  <aside class="sidebar" aria-labelledby="sidebar-title">
+    <section class="sidebar__block">
+      <h2 class="sidebar__title" id="sidebar-title">Destacados</h2>
+      <ul class="sidebar__list">
+        <li><a class="sidebar__link" href="#murcia">Murcia</a></li>
+        <li><a class="sidebar__link" href="#cartagena">Cartagena</a></li>
+        <li><a class="sidebar__link" href="#lorca">Lorca</a></li>
+        <li><a class="sidebar__link" href="#caravaca">Caravaca de la Cruz</a></li>
+        <li><a class="sidebar__link" href="#launion">La Unión</a></li>
+        <li><a class="sidebar__link" href="#aguilas">Águilas</a></li>
+        <li><a class="sidebar__link" href="#galeria">Ver los 45 municipios →</a></li>
+      </ul>
+    </section>
+
+    <section class="sidebar__block">
+      <h2 class="sidebar__title">Cómo se hizo</h2>
+      <ul class="sidebar__list--plain">
+        <li>HTML5 semántico</li>
+        <li>CSS3 externo, sin frameworks</li>
+        <li>Imágenes WebP y JPG</li>
+        <li>Automatización con ImageMagick</li>
+      </ul>
+    </section>
+  </aside>
+
+  <main class="main" id="galeria">
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 class="intro__title" id="intro-title">Cuarenta y cinco municipios, una sola Región</h2>
+      <p class="intro__text">Del casco barroco de la capital al embarcadero de hierro de Águilas, pasando por el Valle de Ricote, el Noroeste y el Mar Menor. Cada tarjeta esconde su historia en el reverso: pasa el ratón —o llega con el tabulador— y marca con el corazón las que quieras guardar.</p>
+    </section>
+
+    <ul class="cards">
+
+      <!-- 1. Murcia -->
+      <li class="card" id="murcia" data-municipio="murcia">
+        <input class="card__check" type="checkbox" id="favorita-murcia">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/murcia-mobile.webp">
+            <source type="image/webp" srcset="assets/img/murcia-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/murcia-mobile.jpg">
+            <img class="card__img" src="assets/img/murcia-desktop.jpg"
+                 alt="Fachada barroca de la Catedral de Murcia presidiendo la plaza del Cardenal Belluga"
+                 width="1000" height="667" loading="eager" fetchpriority="high" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Su fachada barroca se restauró en 2009 y hoy es la imagen de una capital que se disfruta paseando junto al Segura.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-murcia">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Murcia como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.murcia.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Murcia (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Murcia</h3>
+        <p class="card__meta">Capital de la Región · Catedral · Río Segura</p>
+      </li>
+
+      <!-- 2. Cartagena -->
+      <li class="card" id="cartagena" data-municipio="cartagena">
+        <input class="card__check" type="checkbox" id="favorita-cartagena">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/cartagena-mobile.webp">
+            <source type="image/webp" srcset="assets/img/cartagena-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/cartagena-mobile.jpg">
+            <img class="card__img" src="assets/img/cartagena-desktop.jpg"
+                 alt="Graderío y escenario del Teatro Romano de Cartagena"
+                 width="1000" height="667" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Un teatro romano del siglo I a. C. convive con fachadas modernistas en una ciudad que siempre mira al mar.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-cartagena">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Cartagena como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.cartagena.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Cartagena (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Cartagena</h3>
+        <p class="card__meta">Puerto · Teatro Romano · Modernismo</p>
+      </li>
+
+      <!-- 3. Lorca -->
+      <li class="card" id="lorca" data-municipio="lorca">
+        <input class="card__check" type="checkbox" id="favorita-lorca">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/lorca-mobile.webp">
+            <source type="image/webp" srcset="assets/img/lorca-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/lorca-mobile.jpg">
+            <img class="card__img" src="assets/img/lorca-desktop.jpg"
+                 alt="Castillo de Lorca elevado sobre el casco histórico, visto desde la calle Eliodoro Puche"
+                 width="1000" height="667" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La fortaleza del Sol vigila el casco histórico, escenario de una Semana Santa de bordados en oro.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-lorca">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Lorca como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.lorca.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Lorca (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Lorca</h3>
+        <p class="card__meta">Castillo · Barroco · Bordados en oro</p>
+      </li>
+
+      <!-- 4. Caravaca de la Cruz -->
+      <li class="card" id="caravaca" data-municipio="caravaca">
+        <input class="card__check" type="checkbox" id="favorita-caravaca">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/caravaca-mobile.webp">
+            <source type="image/webp" srcset="assets/img/caravaca-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/caravaca-mobile.jpg">
+            <img class="card__img" src="assets/img/caravaca-desktop.jpg"
+                 alt="Basílica de la Vera Cruz en lo alto del castillo-santuario de Caravaca de la Cruz"
+                 width="1000" height="586" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La Basílica de la Vera Cruz corona el santuario, destino de peregrinos en cada Año Jubilar.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-caravaca">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Caravaca de la Cruz como favorita</span>
+              </label>
+              <a class="card__link" href="https://caravacadelacruz.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Caravaca de la Cruz (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Caravaca de la Cruz</h3>
+        <p class="card__meta">Santuario · Vera Cruz · Año Jubilar</p>
+      </li>
+
+      <!-- 5. La Unión -->
+      <li class="card" id="launion" data-municipio="launion">
+        <input class="card__check" type="checkbox" id="favorita-launion">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/launion-mobile.webp">
+            <source type="image/webp" srcset="assets/img/launion-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/launion-mobile.jpg">
+            <img class="card__img" src="assets/img/launion-desktop.jpg"
+                 alt="Galería subterránea de la mina Agrupa Vicenta, en el Parque Minero de La Unión"
+                 width="1000" height="667" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Las galerías de la mina Agrupa Vicenta resumen dos mil años de plata, plomo y zinc bajo la sierra.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-launion">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar La Unión como favorita</span>
+              </label>
+              <a class="card__link" href="https://launion.sedelectronica.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Sede electrónica de La Unión (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">La Unión</h3>
+        <p class="card__meta">Minería · Parque Minero · Flamenco</p>
+      </li>
+
+      <!-- 6. Águilas -->
+      <li class="card" id="aguilas" data-municipio="aguilas">
+        <input class="card__check" type="checkbox" id="favorita-aguilas">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/aguilas-mobile.webp">
+            <source type="image/webp" srcset="assets/img/aguilas-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/aguilas-mobile.jpg">
+            <img class="card__img" src="assets/img/aguilas-desktop.jpg"
+                 alt="Embarcadero de hierro del Hornillo adentrándose en la bahía de Águilas"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El embarcadero del Hornillo, inaugurado en 1903, se adentra en la bahía para cargar el mineral de la sierra.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-aguilas">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Águilas como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.ayuntamientodeaguilas.org/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Águilas (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Águilas</h3>
+        <p class="card__meta">Costa · Bahía · Embarcadero del Hornillo</p>
+      </li>
+
+      <!-- 7. Abanilla -->
+      <li class="card" id="abanilla" data-municipio="abanilla">
+        <input class="card__check" type="checkbox" id="favorita-abanilla">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/abanilla-mobile.webp">
+            <source type="image/webp" srcset="assets/img/abanilla-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/abanilla-mobile.jpg">
+            <img class="card__img" src="assets/img/abanilla-desktop.jpg"
+                 alt="Vista de Abanilla desde el mirador del Corazón de Jesús"
+                 width="1000" height="563" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El casco blanco de Abanilla se asoma al valle del Chícamo desde el mirador del Corazón de Jesús.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-abanilla">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Abanilla como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.abanilla.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Abanilla (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Abanilla</h3>
+        <p class="card__meta">Casco histórico · Río Chícamo · Mirador</p>
+      </li>
+      <!-- 8. Abarán -->
+      <li class="card" id="abaran" data-municipio="abaran">
+        <input class="card__check" type="checkbox" id="favorita-abaran">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/abaran-mobile.webp">
+            <source type="image/webp" srcset="assets/img/abaran-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/abaran-mobile.jpg">
+            <img class="card__img" src="assets/img/abaran-desktop.jpg"
+                 alt="Vista general de Abarán desde la carretera de Ojós"
+                 width="1000" height="448" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Abarán crece entre huertas y acequias junto al Segura, con la sierra de la Pila al fondo.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-abaran">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Abarán como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.abaran.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Abarán (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Abarán</h3>
+        <p class="card__meta">Valle de Ricote · Huerta · Río Segura</p>
+      </li>
+      <!-- 9. Albudeite -->
+      <li class="card" id="albudeite" data-municipio="albudeite">
+        <input class="card__check" type="checkbox" id="favorita-albudeite">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/albudeite-mobile.webp">
+            <source type="image/webp" srcset="assets/img/albudeite-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/albudeite-mobile.jpg">
+            <img class="card__img" src="assets/img/albudeite-desktop.jpg"
+                 alt="Iglesia de Nuestra Señora de los Remedios de Albudeite"
+                 width="1000" height="665" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La iglesia de Nuestra Señora de los Remedios preside el pequeño casco de Albudeite, junto al río Mula.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-albudeite">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Albudeite como favorita</span>
+              </label>
+              <a class="card__link" href="https://albudeite.com/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Albudeite (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Albudeite</h3>
+        <p class="card__meta">Iglesia · Río Mula · Vega</p>
+      </li>
+      <!-- 10. Alcantarilla -->
+      <li class="card" id="alcantarilla" data-municipio="alcantarilla">
+        <input class="card__check" type="checkbox" id="favorita-alcantarilla">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/alcantarilla-mobile.webp">
+            <source type="image/webp" srcset="assets/img/alcantarilla-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/alcantarilla-mobile.jpg">
+            <img class="card__img" src="assets/img/alcantarilla-desktop.jpg"
+                 alt="Plaza de la Constitución de Alcantarilla"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La Plaza de la Constitución reúne el ayuntamiento y el mercado de una huerta que vive entre acequias.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-alcantarilla">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Alcantarilla como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.alcantarilla.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Alcantarilla (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Alcantarilla</h3>
+        <p class="card__meta">Huerta de Murcia · Acequias · Plaza</p>
+      </li>
+      <!-- 11. Los Alcázares -->
+      <li class="card" id="los-alcazares" data-municipio="los-alcazares">
+        <input class="card__check" type="checkbox" id="favorita-los-alcazares">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/los-alcazares-mobile.webp">
+            <source type="image/webp" srcset="assets/img/los-alcazares-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/los-alcazares-mobile.jpg">
+            <img class="card__img" src="assets/img/los-alcazares-desktop.jpg"
+                 alt="Playa del Espejo en Los Alcázares, junto al Mar Menor"
+                 width="1000" height="563" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La arena fina de la Playa del Espejo convierte el Mar Menor en una piscina natural de aguas tranquilas.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-los-alcazares">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Los Alcázares como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.losalcazares.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Los Alcázares (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Los Alcázares</h3>
+        <p class="card__meta">Mar Menor · Playa del Espejo · Costa</p>
+      </li>
+      <!-- 12. Aledo -->
+      <li class="card" id="aledo" data-municipio="aledo">
+        <input class="card__check" type="checkbox" id="favorita-aledo">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/aledo-mobile.webp">
+            <source type="image/webp" srcset="assets/img/aledo-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/aledo-mobile.jpg">
+            <img class="card__img" src="assets/img/aledo-desktop.jpg"
+                 alt="Vista de Aledo sobre el valle"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Aledo se cuelga de un cerro sobre la rambla y mira a la sierra de Espuña, telón de fondo del pueblo.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-aledo">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Aledo como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.aledo.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Aledo (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Aledo</h3>
+        <p class="card__meta">Sierra de Espuña · Cerro · Casco medieval</p>
+      </li>
+      <!-- 13. Alguazas -->
+      <li class="card" id="alguazas" data-municipio="alguazas">
+        <input class="card__check" type="checkbox" id="favorita-alguazas">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/alguazas-mobile.webp">
+            <source type="image/webp" srcset="assets/img/alguazas-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/alguazas-mobile.jpg">
+            <img class="card__img" src="assets/img/alguazas-desktop.jpg"
+                 alt="Fachada principal de la iglesia de San Onofre de Alguazas"
+                 width="1000" height="658" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La fachada de San Onofre y su torre mudéjar recuerdan el peso de la huerta en Alguazas.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-alguazas">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Alguazas como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.alguazas.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Alguazas (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Alguazas</h3>
+        <p class="card__meta">Iglesia de San Onofre · Mudéjar · Huerta</p>
+      </li>
+      <!-- 14. Alhama de Murcia -->
+      <li class="card" id="alhama-de-murcia" data-municipio="alhama-de-murcia">
+        <input class="card__check" type="checkbox" id="favorita-alhama-de-murcia">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/alhama-de-murcia-mobile.webp">
+            <source type="image/webp" srcset="assets/img/alhama-de-murcia-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/alhama-de-murcia-mobile.jpg">
+            <img class="card__img" src="assets/img/alhama-de-murcia-desktop.jpg"
+                 alt="Castillo y casco urbano de Alhama de Murcia"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El castillo de Alhama corona el casco urbano y vigila la vega del Guadalentín.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-alhama-de-murcia">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Alhama de Murcia como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.alhamademurcia.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Alhama de Murcia (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Alhama de Murcia</h3>
+        <p class="card__meta">Castillo · Guadalentín · Termas</p>
+      </li>
+      <!-- 15. Archena -->
+      <li class="card" id="archena" data-municipio="archena">
+        <input class="card__check" type="checkbox" id="favorita-archena">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/archena-mobile.webp">
+            <source type="image/webp" srcset="assets/img/archena-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/archena-mobile.jpg">
+            <img class="card__img" src="assets/img/archena-desktop.jpg"
+                 alt="Río Segura a su paso por Archena"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El Segura atraviesa Archena entre alamedas, a los pies de un balneario con dos mil años de historia.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-archena">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Archena como favorita</span>
+              </label>
+              <a class="card__link" href="https://archena.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Archena (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Archena</h3>
+        <p class="card__meta">Río Segura · Balneario · Alamedas</p>
+      </li>
+      <!-- 16. Beniel -->
+      <li class="card" id="beniel" data-municipio="beniel">
+        <input class="card__check" type="checkbox" id="favorita-beniel">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/beniel-mobile.webp">
+            <source type="image/webp" srcset="assets/img/beniel-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/beniel-mobile.jpg">
+            <img class="card__img" src="assets/img/beniel-desktop.jpg"
+                 alt="Ermita del Sagrado Corazón de Jesús en El Mojón, Beniel"
+                 width="1000" height="666" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Entre huertas y acequias, la ermita del Sagrado Corazón marca el paisaje de El Mojón, en Beniel.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-beniel">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Beniel como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.beniel.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Beniel (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Beniel</h3>
+        <p class="card__meta">Huerta · Ermita · El Mojón</p>
+      </li>
+      <!-- 17. Blanca -->
+      <li class="card" id="blanca" data-municipio="blanca">
+        <input class="card__check" type="checkbox" id="favorita-blanca">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/blanca-mobile.webp">
+            <source type="image/webp" srcset="assets/img/blanca-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/blanca-mobile.jpg">
+            <img class="card__img" src="assets/img/blanca-desktop.jpg"
+                 alt="Vista de Blanca desde el santuario de la Virgen Blanca"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Blanca se descuelga hacia el Segura desde el santuario de su patrona, en pleno Valle de Ricote.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-blanca">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Blanca como favorita</span>
+              </label>
+              <a class="card__link" href="https://blanca.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Blanca (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Blanca</h3>
+        <p class="card__meta">Valle de Ricote · Segura · Mirador</p>
+      </li>
+      <!-- 18. Bullas -->
+      <li class="card" id="bullas" data-municipio="bullas">
+        <input class="card__check" type="checkbox" id="favorita-bullas">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/bullas-mobile.webp">
+            <source type="image/webp" srcset="assets/img/bullas-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/bullas-mobile.jpg">
+            <img class="card__img" src="assets/img/bullas-desktop.jpg"
+                 alt="Vista de Bullas entre viñedos"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Bullas es sinónimo de uva monastrell: sus viñedos y bodegas llenan de color el noroeste murciano.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-bullas">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Bullas como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.bullas.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Bullas (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Bullas</h3>
+        <p class="card__meta">Vino · Monastrell · Noroeste</p>
+      </li>
+      <!-- 19. Calasparra -->
+      <li class="card" id="calasparra" data-municipio="calasparra">
+        <input class="card__check" type="checkbox" id="favorita-calasparra">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/calasparra-mobile.webp">
+            <source type="image/webp" srcset="assets/img/calasparra-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/calasparra-mobile.jpg">
+            <img class="card__img" src="assets/img/calasparra-desktop.jpg"
+                 alt="Calasparra y la sierra del Molino desde la carretera de Moratalla"
+                 width="1000" height="513" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El arroz bomba de Calasparra crece en las terrazas del Segura y del Argos, bajo la sierra del Molino.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-calasparra">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Calasparra como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.calasparra.org/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Calasparra (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Calasparra</h3>
+        <p class="card__meta">Arroz bomba · Río Segura · Sierra del Molino</p>
+      </li>
+      <!-- 20. Campos del Río -->
+      <li class="card" id="campos-del-rio" data-municipio="campos-del-rio">
+        <input class="card__check" type="checkbox" id="favorita-campos-del-rio">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/campos-del-rio-mobile.webp">
+            <source type="image/webp" srcset="assets/img/campos-del-rio-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/campos-del-rio-mobile.jpg">
+            <img class="card__img" src="assets/img/campos-del-rio-desktop.jpg"
+                 alt="Ayuntamiento de Campos del Río"
+                 width="1000" height="609" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El ayuntamiento de Campos del Río se asoma a una vega estrecha entre el Mula y la sierra.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-campos-del-rio">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Campos del Río como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.camposdelrio.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Campos del Río (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Campos del Río</h3>
+        <p class="card__meta">Río Mula · Vega · Ayuntamiento</p>
+      </li>
+      <!-- 21. Cehegín -->
+      <li class="card" id="cehegin" data-municipio="cehegin">
+        <input class="card__check" type="checkbox" id="favorita-cehegin">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/cehegin-mobile.webp">
+            <source type="image/webp" srcset="assets/img/cehegin-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/cehegin-mobile.jpg">
+            <img class="card__img" src="assets/img/cehegin-desktop.jpg"
+                 alt="Cehegín a los pies del macizo de la Peña Rubia"
+                 width="1000" height="563" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Cehegín, conjunto histórico, se arropa al pie de la Peña Rubia y de su castillo.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-cehegin">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Cehegín como favorita</span>
+              </label>
+              <a class="card__link" href="https://cehegin.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Cehegín (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Cehegín</h3>
+        <p class="card__meta">Conjunto histórico · Peña Rubia · Castillo</p>
+      </li>
+      <!-- 22. Ceutí -->
+      <li class="card" id="ceuti" data-municipio="ceuti">
+        <input class="card__check" type="checkbox" id="favorita-ceuti">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/ceuti-mobile.webp">
+            <source type="image/webp" srcset="assets/img/ceuti-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/ceuti-mobile.jpg">
+            <img class="card__img" src="assets/img/ceuti-desktop.jpg"
+                 alt="Ayuntamiento de Ceutí"
+                 width="1000" height="561" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Ceutí creció entre acequias y naranjales; su ayuntamiento recuerda el ritmo de la huerta.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-ceuti">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Ceutí como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.ceuti.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Ceutí (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Ceutí</h3>
+        <p class="card__meta">Huerta · Acequias · Ayuntamiento</p>
+      </li>
+      <!-- 23. Cieza -->
+      <li class="card" id="cieza" data-municipio="cieza">
+        <input class="card__check" type="checkbox" id="favorita-cieza">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/cieza-mobile.webp">
+            <source type="image/webp" srcset="assets/img/cieza-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/cieza-mobile.jpg">
+            <img class="card__img" src="assets/img/cieza-desktop.jpg"
+                 alt="Teatro Capitol de Cieza"
+                 width="1000" height="742" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El Teatro Capitol, joya del siglo XX, comparte protagonismo con la floración de los almendros.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-cieza">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Cieza como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.cieza.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Cieza (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Cieza</h3>
+        <p class="card__meta">Teatro Capitol · Floración · Río Segura</p>
+      </li>
+      <!-- 24. Fortuna -->
+      <li class="card" id="fortuna" data-municipio="fortuna">
+        <input class="card__check" type="checkbox" id="favorita-fortuna">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/fortuna-mobile.webp">
+            <source type="image/webp" srcset="assets/img/fortuna-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/fortuna-mobile.jpg">
+            <img class="card__img" src="assets/img/fortuna-desktop.jpg"
+                 alt="Balneario de Leana en Fortuna"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Aguas termales, palmeras y la sierra de la Pila: Fortuna ha sido balneario desde tiempos romanos.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-fortuna">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Fortuna como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.ayuntamientofortuna.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Fortuna (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Fortuna</h3>
+        <p class="card__meta">Aguas termales · Balneario · Sierra de la Pila</p>
+      </li>
+      <!-- 25. Fuente Álamo de Murcia -->
+      <li class="card" id="fuente-alamo" data-municipio="fuente-alamo">
+        <input class="card__check" type="checkbox" id="favorita-fuente-alamo">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/fuente-alamo-mobile.webp">
+            <source type="image/webp" srcset="assets/img/fuente-alamo-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/fuente-alamo-mobile.jpg">
+            <img class="card__img" src="assets/img/fuente-alamo-desktop.jpg"
+                 alt="Iglesia de San Agustín de Fuente Álamo de Murcia"
+                 width="1000" height="539" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La iglesia de San Agustín domina una llanura de secano donde el viento mueve molinos y norias.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-fuente-alamo">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Fuente Álamo de Murcia como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.fuentealamo.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Fuente Álamo de Murcia (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Fuente Álamo de Murcia</h3>
+        <p class="card__meta">Campo de Cartagena · Iglesia · Secano</p>
+      </li>
+      <!-- 26. Jumilla -->
+      <li class="card" id="jumilla" data-municipio="jumilla">
+        <input class="card__check" type="checkbox" id="favorita-jumilla">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/jumilla-mobile.webp">
+            <source type="image/webp" srcset="assets/img/jumilla-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/jumilla-mobile.jpg">
+            <img class="card__img" src="assets/img/jumilla-desktop.jpg"
+                 alt="Plaza de Arriba de Jumilla"
+                 width="1000" height="667" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La Plaza de Arriba es el corazón de Jumilla, capital del vino y de un castillo que mira a la llanura.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-jumilla">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Jumilla como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.jumilla.org/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Jumilla (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Jumilla</h3>
+        <p class="card__meta">Vino · Castillo · Plaza de Arriba</p>
+      </li>
+      <!-- 27. Librilla -->
+      <li class="card" id="librilla" data-municipio="librilla">
+        <input class="card__check" type="checkbox" id="favorita-librilla">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/librilla-mobile.webp">
+            <source type="image/webp" srcset="assets/img/librilla-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/librilla-mobile.jpg">
+            <img class="card__img" src="assets/img/librilla-desktop.jpg"
+                 alt="Vista del pueblo de Librilla"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Librilla se tiende entre la sierra de Carrascoy y el Guadalentín, con su torre medieval como atalaya.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-librilla">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Librilla como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.librilla.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Librilla (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Librilla</h3>
+        <p class="card__meta">Guadalentín · Atalaya · Huerta</p>
+      </li>
+      <!-- 28. Lorquí -->
+      <li class="card" id="lorqui" data-municipio="lorqui">
+        <input class="card__check" type="checkbox" id="favorita-lorqui">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/lorqui-mobile.webp">
+            <source type="image/webp" srcset="assets/img/lorqui-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/lorqui-mobile.jpg">
+            <img class="card__img" src="assets/img/lorqui-desktop.jpg"
+                 alt="Ayuntamiento de Lorquí"
+                 width="1000" height="667" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El ayuntamiento de Lorquí ocupa una plaza recoleta en un municipio de huerta y tradición aceitunera.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-lorqui">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Lorquí como favorita</span>
+              </label>
+              <a class="card__link" href="https://ayuntamientodelorqui.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Lorquí (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Lorquí</h3>
+        <p class="card__meta">Huerta · Acequias · Ayuntamiento</p>
+      </li>
+      <!-- 29. Mazarrón -->
+      <li class="card" id="mazarron" data-municipio="mazarron">
+        <input class="card__check" type="checkbox" id="favorita-mazarron">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/mazarron-mobile.webp">
+            <source type="image/webp" srcset="assets/img/mazarron-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/mazarron-mobile.jpg">
+            <img class="card__img" src="assets/img/mazarron-desktop.jpg"
+                 alt="Faro de Puerto de Mazarrón visto desde la cala del Moro Santo"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El faro de Puerto de Mazarrón cierra una bahía de playas y minas fenicias.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-mazarron">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Mazarrón como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.mazarron.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Mazarrón (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Mazarrón</h3>
+        <p class="card__meta">Costa · Faro · Bahía</p>
+      </li>
+      <!-- 30. Molina de Segura -->
+      <li class="card" id="molina-de-segura" data-municipio="molina-de-segura">
+        <input class="card__check" type="checkbox" id="favorita-molina-de-segura">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/molina-de-segura-mobile.webp">
+            <source type="image/webp" srcset="assets/img/molina-de-segura-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/molina-de-segura-mobile.jpg">
+            <img class="card__img" src="assets/img/molina-de-segura-desktop.jpg"
+                 alt="Ayuntamiento de Molina de Segura"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Molina de Segura, puerta de la huerta murciana, mezcla industria y acequias a orillas del Segura.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-molina-de-segura">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Molina de Segura como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.molinadesegura.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Molina de Segura (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Molina de Segura</h3>
+        <p class="card__meta">Huerta · Río Segura · Ayuntamiento</p>
+      </li>
+      <!-- 31. Moratalla -->
+      <li class="card" id="moratalla" data-municipio="moratalla">
+        <input class="card__check" type="checkbox" id="favorita-moratalla">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/moratalla-mobile.webp">
+            <source type="image/webp" srcset="assets/img/moratalla-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/moratalla-mobile.jpg">
+            <img class="card__img" src="assets/img/moratalla-desktop.jpg"
+                 alt="Vista de Moratalla, pueblo de montaña"
+                 width="1000" height="597" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Moratalla se esconde entre sierras y pinturas rupestres, en el rincón más agreste del noroeste.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-moratalla">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Moratalla como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.ayuntamientomoratalla.net/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Moratalla (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Moratalla</h3>
+        <p class="card__meta">Sierra · Arte rupestre · Noroeste</p>
+      </li>
+      <!-- 32. Mula -->
+      <li class="card" id="mula" data-municipio="mula">
+        <input class="card__check" type="checkbox" id="favorita-mula">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/mula-mobile.webp">
+            <source type="image/webp" srcset="assets/img/mula-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/mula-mobile.jpg">
+            <img class="card__img" src="assets/img/mula-desktop.jpg"
+                 alt="Castillo de Mula sobre el casco histórico"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El castillo de los Vélez y la torre de la iglesia dibujan el skyline de Mula, cuna de los tambores.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-mula">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Mula como favorita</span>
+              </label>
+              <a class="card__link" href="https://mula.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Mula (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Mula</h3>
+        <p class="card__meta">Castillo · Tambores · Conjunto histórico</p>
+      </li>
+      <!-- 33. Ojós -->
+      <li class="card" id="ojos" data-municipio="ojos">
+        <input class="card__check" type="checkbox" id="favorita-ojos">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/ojos-mobile.webp">
+            <source type="image/webp" srcset="assets/img/ojos-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/ojos-mobile.jpg">
+            <img class="card__img" src="assets/img/ojos-desktop.jpg"
+                 alt="Iglesia de San Agustín de Ojós"
+                 width="1000" height="731" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Ojós se asoma al Segura desde un balcón de huerta y palmeras en el Valle de Ricote.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-ojos">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Ojós como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.ayuntamientodeojos.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Ojós (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Ojós</h3>
+        <p class="card__meta">Valle de Ricote · Segura · Huerta</p>
+      </li>
+      <!-- 34. Pliego -->
+      <li class="card" id="pliego" data-municipio="pliego">
+        <input class="card__check" type="checkbox" id="favorita-pliego">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/pliego-mobile.webp">
+            <source type="image/webp" srcset="assets/img/pliego-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/pliego-mobile.jpg">
+            <img class="card__img" src="assets/img/pliego-desktop.jpg"
+                 alt="Torre del castillo de Pliego"
+                 width="960" height="1280" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La torre del castillo de Pliego vigila un pueblo de almendros y canteras a los pies de la sierra.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-pliego">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Pliego como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.pliego.org/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Pliego (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Pliego</h3>
+        <p class="card__meta">Castillo · Sierra · Almendros</p>
+      </li>
+      <!-- 35. Puerto Lumbreras -->
+      <li class="card" id="puerto-lumbreras" data-municipio="puerto-lumbreras">
+        <input class="card__check" type="checkbox" id="favorita-puerto-lumbreras">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/puerto-lumbreras-mobile.webp">
+            <source type="image/webp" srcset="assets/img/puerto-lumbreras-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/puerto-lumbreras-mobile.jpg">
+            <img class="card__img" src="assets/img/puerto-lumbreras-desktop.jpg"
+                 alt="Panorámica del Cerro del Castellar con el castillo de Nogalte"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Las casas cueva y el castillo de Nogalte se encaraman al Cerro del Castellar, en Puerto Lumbreras.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-puerto-lumbreras">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Puerto Lumbreras como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.puertolumbreras.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Puerto Lumbreras (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Puerto Lumbreras</h3>
+        <p class="card__meta">Castillo de Nogalte · Casas cueva · Desierto</p>
+      </li>
+      <!-- 36. Ricote -->
+      <li class="card" id="ricote" data-municipio="ricote">
+        <input class="card__check" type="checkbox" id="favorita-ricote">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/ricote-mobile.webp">
+            <source type="image/webp" srcset="assets/img/ricote-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/ricote-mobile.jpg">
+            <img class="card__img" src="assets/img/ricote-desktop.jpg"
+                 alt="Ricote y su huerta desde la sierra de Ricote"
+                 width="1000" height="747" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Ricote mira desde su cerro a una huerta de azudes y acequias que el Segura riega desde siglos.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-ricote">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Ricote como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.ricote.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Ricote (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Ricote</h3>
+        <p class="card__meta">Valle de Ricote · Huerta · Azudes</p>
+      </li>
+      <!-- 37. San Javier -->
+      <li class="card" id="san-javier" data-municipio="san-javier">
+        <input class="card__check" type="checkbox" id="favorita-san-javier">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/san-javier-mobile.webp">
+            <source type="image/webp" srcset="assets/img/san-javier-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/san-javier-mobile.jpg">
+            <img class="card__img" src="assets/img/san-javier-desktop.jpg"
+                 alt="Calle de Miguel Zapata en San Javier"
+                 width="1000" height="683" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Las calles de San Javier conservan el ritmo tranquilo de un pueblo que vive de cara al Mar Menor.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-san-javier">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar San Javier como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.sanjavier.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de San Javier (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">San Javier</h3>
+        <p class="card__meta">Mar Menor · Calles · Tradición</p>
+      </li>
+      <!-- 38. San Pedro del Pinatar -->
+      <li class="card" id="san-pedro-del-pinatar" data-municipio="san-pedro-del-pinatar">
+        <input class="card__check" type="checkbox" id="favorita-san-pedro-del-pinatar">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/san-pedro-del-pinatar-mobile.webp">
+            <source type="image/webp" srcset="assets/img/san-pedro-del-pinatar-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/san-pedro-del-pinatar-mobile.jpg">
+            <img class="card__img" src="assets/img/san-pedro-del-pinatar-desktop.jpg"
+                 alt="Pasarela hacia los baños de lodo de San Pedro del Pinatar"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Las pasarelas de San Pedro del Pinatar llevan a los baños de lodo y a las salinas del Mar Menor.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-san-pedro-del-pinatar">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar San Pedro del Pinatar como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.sanpedrodelpinatar.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de San Pedro del Pinatar (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">San Pedro del Pinatar</h3>
+        <p class="card__meta">Mar Menor · Salinas · Baños de lodo</p>
+      </li>
+      <!-- 39. Santomera -->
+      <li class="card" id="santomera" data-municipio="santomera">
+        <input class="card__check" type="checkbox" id="favorita-santomera">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/santomera-mobile.webp">
+            <source type="image/webp" srcset="assets/img/santomera-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/santomera-mobile.jpg">
+            <img class="card__img" src="assets/img/santomera-desktop.jpg"
+                 alt="Casa Consistorial de Santomera"
+                 width="1000" height="740" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La Casa Consistorial, de principios del siglo XX, preside un municipio entre el Segura y la sierra de Orihuela.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-santomera">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Santomera como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.santomera.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Santomera (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Santomera</h3>
+        <p class="card__meta">Huerta · Sierra de Orihuela · Ayuntamiento</p>
+      </li>
+      <!-- 40. Torre-Pacheco -->
+      <li class="card" id="torre-pacheco" data-municipio="torre-pacheco">
+        <input class="card__check" type="checkbox" id="favorita-torre-pacheco">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/torre-pacheco-mobile.webp">
+            <source type="image/webp" srcset="assets/img/torre-pacheco-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/torre-pacheco-mobile.jpg">
+            <img class="card__img" src="assets/img/torre-pacheco-desktop.jpg"
+                 alt="Molino de viento cerca de Torre-Pacheco"
+                 width="1000" height="667" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Los molinos de viento todavía giran sobre el campo de Torre-Pacheco, entre invernaderos y salinas.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-torre-pacheco">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Torre-Pacheco como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.torrepacheco.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Torre-Pacheco (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Torre-Pacheco</h3>
+        <p class="card__meta">Molinos · Campo de Cartagena · Invernaderos</p>
+      </li>
+      <!-- 41. Las Torres de Cotillas -->
+      <li class="card" id="torres-de-cotillas" data-municipio="torres-de-cotillas">
+        <input class="card__check" type="checkbox" id="favorita-torres-de-cotillas">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/torres-de-cotillas-mobile.webp">
+            <source type="image/webp" srcset="assets/img/torres-de-cotillas-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/torres-de-cotillas-mobile.jpg">
+            <img class="card__img" src="assets/img/torres-de-cotillas-desktop.jpg"
+                 alt="Parque de la Constitución de Las Torres de Cotillas"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">El Parque de la Constitución es la plaza verde de Las Torres de Cotillas, en plena vega media.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-torres-de-cotillas">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Las Torres de Cotillas como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.lastorresdecotillas.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Las Torres de Cotillas (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Las Torres de Cotillas</h3>
+        <p class="card__meta">Vega media · Parque · Huerta</p>
+      </li>
+      <!-- 42. Totana -->
+      <li class="card" id="totana" data-municipio="totana">
+        <input class="card__check" type="checkbox" id="favorita-totana">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/totana-mobile.webp">
+            <source type="image/webp" srcset="assets/img/totana-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/totana-mobile.jpg">
+            <img class="card__img" src="assets/img/totana-desktop.jpg"
+                 alt="Ermita y casas del barrio de San José de Totana"
+                 width="1000" height="563" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">La ermita de San José y su barrio conservan la escala de pueblo que Totana mantiene bajo la sierra de Espuña.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-totana">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Totana como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.totana.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Totana (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Totana</h3>
+        <p class="card__meta">Sierra de Espuña · Ermita · Barrio</p>
+      </li>
+      <!-- 43. Ulea -->
+      <li class="card" id="ulea" data-municipio="ulea">
+        <input class="card__check" type="checkbox" id="favorita-ulea">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/ulea-mobile.webp">
+            <source type="image/webp" srcset="assets/img/ulea-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/ulea-mobile.jpg">
+            <img class="card__img" src="assets/img/ulea-desktop.jpg"
+                 alt="Vista de Ulea desde Villanueva del Río Segura"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Ulea se refleja en el Segura entre huertas, con el santuario de la Virgen de la Salud sobre el cerro.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-ulea">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Ulea como favorita</span>
+              </label>
+              <a class="card__link" href="https://ulea.info/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Ulea (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Ulea</h3>
+        <p class="card__meta">Valle de Ricote · Segura · Huerta</p>
+      </li>
+      <!-- 44. Villanueva del Río Segura -->
+      <li class="card" id="villanueva-del-rio-segura" data-municipio="villanueva-del-rio-segura">
+        <input class="card__check" type="checkbox" id="favorita-villanueva-del-rio-segura">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/villanueva-del-rio-segura-mobile.webp">
+            <source type="image/webp" srcset="assets/img/villanueva-del-rio-segura-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/villanueva-del-rio-segura-mobile.jpg">
+            <img class="card__img" src="assets/img/villanueva-del-rio-segura-desktop.jpg"
+                 alt="Vista de Villanueva del Río Segura"
+                 width="1000" height="422" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Villanueva del Río Segura crece entre naranjos y acequias, en el corazón del Valle de Ricote.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-villanueva-del-rio-segura">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Villanueva del Río Segura como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.aytovillanueva.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Villanueva del Río Segura (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Villanueva del Río Segura</h3>
+        <p class="card__meta">Valle de Ricote · Naranjos · Segura</p>
+      </li>
+      <!-- 45. Yecla -->
+      <li class="card" id="yecla" data-municipio="yecla">
+        <input class="card__check" type="checkbox" id="favorita-yecla">
+        <figure class="card__figure">
+          <picture>
+            <source type="image/webp" media="(width < 600px)" srcset="assets/img/yecla-mobile.webp">
+            <source type="image/webp" srcset="assets/img/yecla-desktop.webp">
+            <source type="image/jpeg" media="(width < 600px)" srcset="assets/img/yecla-mobile.jpg">
+            <img class="card__img" src="assets/img/yecla-desktop.jpg"
+                 alt="Vista de Yecla desde el santuario del Castillo"
+                 width="1000" height="750" loading="lazy" decoding="async">
+          </picture>
+          <p class="card__badge">Favorita</p>
+          <figcaption class="card__overlay">
+            <p class="card__text">Yecla, capital del mueble y del vino, se extiende a los pies del santuario del Castillo.</p>
+            <p class="card__actions">
+              <label class="card__like" for="favorita-yecla">
+                <img class="card__icon card__icon--empty" src="assets/icons/heart-outline.svg" alt="" width="20" height="20">
+                <img class="card__icon card__icon--full" src="assets/icons/heart-filled.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Marcar Yecla como favorita</span>
+              </label>
+              <a class="card__link" href="https://www.yecla.es/" target="_blank" rel="noopener noreferrer">
+                <img class="card__icon" src="assets/icons/external-link.svg" alt="" width="20" height="20">
+                <span class="visually-hidden">Web oficial de Yecla (se abre en una pestaña nueva)</span>
+              </a>
+            </p>
+          </figcaption>
+        </figure>
+        <h3 class="card__title">Yecla</h3>
+        <p class="card__meta">Vino · Mueble · Santuario del Castillo</p>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="footer" id="creditos">
+    <section class="footer__block">
+      <h2 class="footer__title">Créditos fotográficos</h2>
+      <ul class="footer__list">
+        <li>Murcia: <a href="https://commons.wikimedia.org/wiki/File:Fachada_Catedral_de_Murcia.jpg">Pedro J Pacheco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Cartagena: <a href="https://commons.wikimedia.org/wiki/File:Teatro_romano_de_Cartagena,_Espa%C3%B1a,_2022-07-16,_DD_03.jpg">Diego Delso</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Lorca: <a href="https://commons.wikimedia.org/wiki/File:Lorca_Castle_as_seen_from_Calle_Eliodoro_Puche.jpg">Ymblanter</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Caravaca de la Cruz: <a href="https://commons.wikimedia.org/wiki/File:Castillo_Santuario_de_la_Vera_Cruz_de_Caravaca_de_la_Cruz.jpg">Aleginonso</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>La Unión: <a href="https://commons.wikimedia.org/wiki/File:Interior_mina_Agrupa_Vicenta_3.jpg">DMzlC</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Águilas: <a href="https://commons.wikimedia.org/wiki/File:Embarcadero_del_Hornillo_en_%C3%81guilas_(Regi%C3%B3n_de_Murcia,_Espa%C3%B1a)_01.jpg">Mromsan</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Abanilla: <a href="https://commons.wikimedia.org/wiki/File:Abanilla1.jpg">Roquex</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+        <li>Abarán: <a href="https://commons.wikimedia.org/wiki/File:Abaran_vista_general.jpg">Lionni</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">Dominio público</a>.</li>
+        <li>Albudeite: <a href="https://commons.wikimedia.org/wiki/File:Iglesia_de_Nuestra_Se%C3%B1ora_de_los_Remedios_Albudeite.jpg">Pedro J Pacheco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Alcantarilla: <a href="https://commons.wikimedia.org/wiki/File:Alcantarilla_-_Plaza_de_la_Constituci%C3%B3n_1.jpg">Zarateman</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+        <li>Los Alcázares: <a href="https://commons.wikimedia.org/wiki/File:Playa_del_Espejo,_en_Los_Alc%C3%A1zares_(Murcia,_Espa%C3%B1a).jpg">Polosureste</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>Aledo: <a href="https://commons.wikimedia.org/wiki/File:Vista_de_Aledo.jpg">Antoniograjal</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>Alguazas: <a href="https://commons.wikimedia.org/wiki/File:Fachada_Principal_de_la_Iglesia_de_San_Onofre.jpg">Celiaclg</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Alhama de Murcia: <a href="https://commons.wikimedia.org/wiki/File:Castillo_y_casco_urbano_de_Alhama_de_Murcia.jpg">Lorenzo Soriano</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Archena: <a href="https://commons.wikimedia.org/wiki/File:Rio_Segura_a_su_paso_por_Archena.jpg">Juan José Abenza Moreno</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>Beniel: <a href="https://commons.wikimedia.org/wiki/File:Ermite_El_Sagrado_Coraz%C3%B3n_de_Jes%C3%BAs.JPG">Macabreramarcos</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>Blanca: <a href="https://commons.wikimedia.org/wiki/File:Vista_municipio_Blanca_desde_Virgen_Blanca.jpg">Aliroru</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Bullas: <a href="https://commons.wikimedia.org/wiki/File:Bullasv.jpg">Jgomez53</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">Dominio público</a>.</li>
+        <li>Calasparra: <a href="https://commons.wikimedia.org/wiki/File:Calasparra_y_sierra_del_Molino.jpg">Lionni</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">Dominio público</a>.</li>
+        <li>Campos del Río: <a href="https://commons.wikimedia.org/wiki/File:Ayuntamiento_de_Campos_del_Rio.jpg">Pedro J Pacheco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Cehegín: <a href="https://commons.wikimedia.org/wiki/File:Ceheg%C3%ADn_(Murcia).jpg">Juanjocehegin1998</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Ceutí: <a href="https://commons.wikimedia.org/wiki/File:Ayto_ceuti.jpg">Ceutiense1</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Cieza: <a href="https://commons.wikimedia.org/wiki/File:Cieza_-_Teatro_Capitol.jpg">Zarateman</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+        <li>Fortuna: <a href="https://commons.wikimedia.org/wiki/File:FortunaLeana.jpg">Alexanderkg</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">Dominio público</a>.</li>
+        <li>Fuente Álamo de Murcia: <a href="https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Agust%C3%ADn_de_Fuente_%C3%81lamo_de_Murcia.jpg">Bertobarc90</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Jumilla: <a href="https://commons.wikimedia.org/wiki/File:PLAZA_ARRIBA.jpg">Adrianlopezc</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Librilla: <a href="https://commons.wikimedia.org/wiki/File:Librilla.JPG">Sapoproductions</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Lorquí: <a href="https://commons.wikimedia.org/wiki/File:Ayuntamiento_de_Lorqui.jpg">Pedro J Pacheco</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Mazarrón: <a href="https://commons.wikimedia.org/wiki/File:Pto._de_Mazarr%C3%B3n_(Faro).jpg">ManuelNomada</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Molina de Segura: <a href="https://commons.wikimedia.org/wiki/File:Molina_de_SeguraT-_Ayuntamiento_4.jpg">Zarateman</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+        <li>Moratalla: <a href="https://commons.wikimedia.org/wiki/File:Moratalla_-_52305138081.jpg">Werner Wilmes</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</li>
+        <li>Mula: <a href="https://commons.wikimedia.org/wiki/File:Castillo_de_Mula.JPG">Antonio d'Orleans</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/es/">CC BY-SA 3.0 es</a>.</li>
+        <li>Ojós: <a href="https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Agust%C3%ADn_de_Oj%C3%B3s.jpg">Jayma</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/es/">CC BY-SA 3.0 es</a>.</li>
+        <li>Pliego: <a href="https://commons.wikimedia.org/wiki/File:Torre_del_castillo_de_Pliego_(Murcia).jpg">Juan Leyva</a>, <a href="https://creativecommons.org/licenses/by/3.0/es/">CC BY 3.0 es</a>.</li>
+        <li>Puerto Lumbreras: <a href="https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_del_Cerro_del_Castellar.jpg">Wikipuerto</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>Ricote: <a href="https://commons.wikimedia.org/wiki/File:Ricoteysuhuerta.jpg">Gregorico</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>San Javier: <a href="https://commons.wikimedia.org/wiki/File:Carrer_de_Miguel_Zapata,_San_Javier.jpg">Joanbanjo</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>San Pedro del Pinatar: <a href="https://commons.wikimedia.org/wiki/File:Pasarela_a_los_ba%C3%B1os_de_lodo_en_San_Pedro_del_Pinatar.jpg">Anidae</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+        <li>Santomera: <a href="https://commons.wikimedia.org/wiki/File:Casa_Consistorial_de_Santomera.jpg">Esperpento98</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+        <li>Torre-Pacheco: <a href="https://commons.wikimedia.org/wiki/File:Windm%C3%BChle_bei_Torre_Pacheco_-_52476806321.jpg">Werner Wilmes</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</li>
+        <li>Las Torres de Cotillas: <a href="https://commons.wikimedia.org/wiki/File:Parque_de_la_Constituci%C3%B3n_de_Las_Torres_de_Cotillas.jpg">Jochosillo</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+        <li>Totana: <a href="https://commons.wikimedia.org/wiki/File:Barrio_San_Jos%C3%A9_Totana.jpg">SERG48</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Ulea: <a href="https://commons.wikimedia.org/wiki/File:Ulea.jpg">Sebasgs</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li>Villanueva del Río Segura: <a href="https://commons.wikimedia.org/wiki/File:Villanueva_del_Rio_Segura.jpg">Lionni</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">Dominio público</a>.</li>
+        <li>Yecla: <a href="https://commons.wikimedia.org/wiki/File:Yecla._Vista_desde_el_Santuario_del_Castillo_2.JPG">Enrique Íñiguez Rodríguez (Qoan)</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+      </ul>
+      <p class="footer__note">Cuarenta y cinco fotografías descargadas de <a href="https://commons.wikimedia.org/">Wikimedia Commons</a> y optimizadas con ImageMagick. Cada autor enlaza a la ficha original del archivo.</p>
+    </section>
+
+    <section class="footer__block">
+      <h2 class="footer__title">Tecnología y licencias</h2>
+      <ul class="footer__list footer__list--plain">
+        <li>HTML5 semántico y CSS3 nativo, sin frameworks.</li>
+        <li>Imágenes en WebP con alternativa JPG para navegadores antiguos.</li>
+        <li>Iconos de <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>, licencia MIT.</li>
+      </ul>
+    </section>
+
+    <p class="footer__legal">© 2026 MurciaGram · Práctica académica de CSS3 · Región de Murcia</p>
+  </footer>
+</body>
+</html>
